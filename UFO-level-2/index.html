@@ -52,7 +52,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading" >Filter Search</div>
                         <div class="panel-body">
-                          <form>
+                          <form id='form'>
                             <div class="form-group">
                               <ul class="list-group" id="filters">
                                 <li class="filter list-group-item">
@@ -60,20 +60,36 @@
                                   <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                                 </li>
                                 <li class="filter list-group-item">
-                                  <label for="date">Enter a City</label>
-                                  <input class="form-control" id="city" type="text" placeholder="San Francisco">
+                                  <label for="city">Enter a City</label>
+                                  <div id="city1">
+                                    <select id="city">
+                                        <option value="Select a city" id='city_option'>Select a City</option>
+                                      </select>
+                                </div>
                                 </li>
                                 <li class="filter list-group-item">
-                                  <label for="date">Enter a State</label>
-                                  <input class="form-control" id="State" type="text" placeholder="CA">
+                                  <label for="state">Enter a State</label>
+                                  <div id="state1">
+                                    <select id="state">
+                                        <option value="Select a State" id='state_option'>Select a State</option>
+                                      </select>
+                                </div>                                
+                              </li>
+                                <li class="filter list-group-item">
+                                  <label for="country">Enter a Country</label>
+                                  <div id="country1">
+                                    <select id="country">
+                                        <option value="Select a Country" id="country_option">Select a Country</option>
+                                      </select>
+                                </div> 
                                 </li>
                                 <li class="filter list-group-item">
-                                  <label for="date">Enter a Country</label>
-                                  <input class="form-control" id="country" type="text" placeholder="USA">
-                                </li>
-                                <li class="filter list-group-item">
-                                  <label for="date">Enter a Shape</label>
-                                  <input class="form-control" id="country" type="text" placeholder="circle">
+                                  <label for="shape">Enter a Shape</label>
+                                  <div id="shape1">
+                                    <select id="shape">
+                                        <option value="Select a Shape" id='shape_option'>Select a Shape</option>
+                                      </select>
+                                </div> 
                                 </li>
                               </ul>
                             </div>
